@@ -1,0 +1,28 @@
+Scope
+========
+1) 2 tower types, torch and beam (third type transmitter will be later)
+2) attr for tower are damage and range
+3) 3 gem/effect types, ruby (heat, splash), sapphire (cold, slow), topaz (lightning, reduce buff)
+4) attr for gem are rate, duration, grade, range and damage
+5) 2 monster types, swarm and boss
+6) one spawn point and one destination, only best route is activate (so no multiple path) no collision detection* for movable object (overlapping betwwen monster is allowed)
+7) UI support 3d objects, so that user could drag gem to the holder and to the wall directly (AsWing)
+
+*no collision, but if more than 1 monster on 1 square, the monster speed will be slow and damage will be split
+
+TODO
+=====
+1) 2d sprite supported frame animation, key color and tint color
+2) 3d collada supported frame animation and object attachment, for wall and holder
+3) 3d sphere that look like energized gem stone. it has three stages, normal: juz reflection, connected: refection + emmisve, power on: refection + pulsar emmision
+4) billboard 3d line with emissive effect
+5) particle with animated billboard, for evaporated monster
+6) camera system that always 45deg elevated from ground, has control for rotation on y axis and pan on x and z axis and the lookat position must be within arena
+7) test aswing for displaying 3d objects and theme function
+8) no monster progress bar as gem craft byt a button with coundown timer
+9) monster life bar
+10) monster movement system with independant speed
+11) facebook functionality: invite friends, annoucement when user won
+13) php for retrieving user, map data, and store user result
+14) 2d sound effects
+15) UI layout

@@ -1,0 +1,21 @@
+Nov 2, 2009
+=============
+* flood fill
+* score (display state for each wisp) - done
+* chain group editing
+* wisp effect (hit effect) - done
+* tower animation - done
+* better orbs - done
+* active towers
+* tower formation
+* sky box - done
+
+Oct 26, 2009
+==============
+* targeting wisps - done
+* wisps flow - done
+* flood fill - should we?
+* score - next sprint
+* tower removing  - done
+* game flow able to start stop start - done
+

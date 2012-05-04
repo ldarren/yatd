@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Metaversum</author>
+      <authoring_tool>3dsMax 11 - Feeling ColladaMax v3.05B.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=0;ExportTangents=0;ExportAnimations=0;SampleAnim=0;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=3.33333;</comments>
+      <source_data>file:///F:/flash/flash_sword_test.max</source_data>
+    </contributor>
+    <created>2009-06-09T04:23:26Z</created>
+    <modified>2009-06-09T04:23:28Z</modified>
+    <unit meter="0.1" name="meter"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_lights>
+    <light id="ambient-environment-light" name="Ambient">
+      <technique_common>
+        <ambient>
+          <color>0.164706 0.164706 0.164706</color>
+        </ambient>
+      </technique_common>
+      <extra>
+        <technique profile="FCOLLADA">
+          <intensity>1</intensity>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_materials>
+    <material id="_1_-_Default" name="_1_-_Default">
+      <instance_effect url="#_1_-_Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_1_-_Default-fx" name="_1_-_Default">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588235 0.588235 0.588235 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588235 0.588235 0.588235 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box01-mesh" name="Box01">
+      <mesh>
+        <source id="Box01-mesh-positions">
+          <float_array id="Box01-mesh-positions-array" count="57">-0.055901 -0.055901 -0.388095 0.081184 -0.081184 -0.388095 -0.081184 0.081184 -0.388095 0.055901 0.055901 -0.388095 0 0 3.26536 0.152521 -0.152521 3 -0.152521 0.152521 3 0.081184 -0.081184 0.313138 -0.055901 -0.055901 0.313138 0.055901 0.055901 0.313138 -0.081184 0.081184 0.313138 0.344869 -0.344869 0.516019 0.107179 0.107179 0.516019 -0.344869 0.344869 0.516019 -0.107179 -0.107179 0.516019 -0.04728 -0.04728 0.535437 0.101552 -0.101552 0.535436 0.04728 0.04728 0.535436 -0.101552 0.101552 0.535436</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-positions-array" count="19" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-normals">
+          <float_array id="Box01-mesh-normals-array" count="132">0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.181379 -0.983413 0 -0.160022 -0.86762 -0.470774 -0.28173 -0.924978 -0.255038 -0.181379 -0.983413 0 0.983413 0.181379 0 0.972155 0.179302 -0.150883 0.92494 0.278855 -0.258314 0.983413 0.181379 0 0.181379 0.983413 0 0.160022 0.86762 -0.470774 0.281729 0.924978 -0.255038 0.181379 0.983413 0 -0.983413 -0.181379 0 -0.972155 -0.179302 -0.150883 -0.92494 -0.278855 -0.258314 -0.983413 -0.181379 0 -0.405584 -0.911771 0.064618 -0.410683 -0.810156 0.418315 0.862196 0.35884 0.357565 0.886219 0.461096 0.044801 0.405584 0.911771 0.06462 0.410684 0.810155 0.418315 -0.862196 -0.35884 0.357564 -0.886219 -0.461096 0.044801 -0.231062 -0.583584 0.778486 -0.261645 -0.681718 0.68323 0.65946 0.260546 0.705144 0.54577 0.210004 0.811193 0.231062 0.583584 0.778486 0.261645 0.681716 0.683232 -0.659461 -0.260546 0.705143 -0.545768 -0.210002 0.811194 -0.677693 -0.734968 0.023556 -0.685284 -0.727865 0.024474 0.731982 0.681321 0.001884 0.707107 0.707107 0 0.677693 0.734967 0.023556 0.685284 0.727865 0.024474 -0.731983 -0.681321 0.001884 -0.707107 -0.707107 0</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-normals-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-map-channel1">
+          <float_array id="Box01-mesh-map-channel1-array" count="132">1 0 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 1 0.5 0 0 0.5 0 0 0.5 0 1 0.5 0 1 0.5 0 0 0.5 0 1 0.5 0 0 0.5 0 1 0.8125 0 0 0.8125 0 1 0.8125 0 0 0.8125 0 1 0.8125 0 0 0.8125 0 0 0.8125 0 1 0.8125 0 0 0.9375 0 1 0.9375 0 1 0.9375 0 0 0.9375 0 1 0.9375 0 0 0.9375 0 1 0.9375 0 0 0.9375 0</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-map-channel1-array" count="44" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box01-mesh-vertices">
+          <input semantic="POSITION" source="#Box01-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="34">
+          <input semantic="VERTEX" source="#Box01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Box01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Box01-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 2 1 2 3 2 3 3 2 3 1 3 1 0 0 0 1 4 5 7 5 20 8 6 22 8 6 22 0 7 4 1 4 5 3 8 9 9 9 24 7 10 21 7 10 21 1 11 8 3 8 9 2 12 13 10 13 26 9 14 25 9 14 25 3 15 12 2 12 13 0 16 17 8 17 23 10 18 27 10 18 27 2 19 16 0 16 17 11 20 28 14 21 34 8 6 22 8 6 22 7 5 20 11 20 28 12 22 30 11 23 29 7 10 21 7 10 21 9 9 24 12 22 30 13 24 32 12 25 31 9 14 25 9 14 25 10 13 26 13 24 32 14 26 35 13 27 33 10 18 27 10 18 27 8 17 23 14 26 35 16 28 38 15 29 36 14 21 34 14 21 34 11 20 28 16 28 38 17 30 40 16 31 39 11 23 29 11 23 29 12 22 30 17 30 40 18 32 42 17 33 41 12 25 31 12 25 31 13 24 32 18 32 42 15 34 37 18 35 43 13 27 33 13 27 33 14 26 35 15 34 37 5 36 7 4 37 6 15 29 36 15 29 36 16 28 38 5 36 7 4 38 11 5 39 10 16 31 39 16 31 39 17 30 40 4 38 11 6 40 15 4 41 14 17 33 41 17 33 41 18 32 42 6 40 15 4 42 19 6 43 18 18 35 43 18 35 43 15 34 37 4 42 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="flash_sword_test.max" name="flash_sword_test_max">
+      <node id="Box01-node" name="Box01" type="NODE">
+        <translate>0 0.000365 0</translate>
+        <rotate>0 0 -1 -45</rotate>
+        <instance_geometry url="#Box01-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="VisualSceneNode" type="NODE">
+        <instance_light url="#ambient-environment-light"/>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#flash_sword_test.max"/>
+  </scene>
+</COLLADA>

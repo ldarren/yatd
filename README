@@ -1,0 +1,8 @@
+FlashDevelop Setup for SmartFoxServer + Flex2
+===============================================
+1) Install latest FlashDevelop (3 Beta6) from www.flashdevelop.org
+2) extract latest flex sdk (3), from http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK to c:\devel\flexsdk3
+3) open flashDevelop->tools->Program Setting->AS3Context->Flex SDK Location: key in "C:\devel\flex3"
+4) open flashDevelop->tools->Global Classpaths: key in C:\Program Files\SmartFoxServerPRO_1.6.0\Flash API\Actionscript 3.0
+5) go http://www.adobe.com/support/flashplayer/downloads.html and download Windows Flash Player 9 Projector content debugger
+6) rename sa_flashplayer+9_debug.exe to flash.exe and place it at flashDevelop root dir

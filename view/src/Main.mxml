@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:Application
+ xmlns:mx="http://www.adobe.com/2006/mxml"
+ xmlns:pica="*"
+ layout="vertical"
+ frameRate="15"
+ backgroundGradientColors="[#AEE8F4, #131617]"
+ backgroundGradientAlphas="[1.0, 1.0]"
+ applicationComplete="onCompletion(event)">
+	 
+	 <mx:Script>
+		 <![CDATA[
+		 import flash.events.Event;
+		 
+		 private function onCompletion(evt:Event):void {
+			 canvas.addEventListener(MouseEvent.MOUSE_DOWN, onEvent);
+			 canvas.addEventListener(MouseEvent.MOUSE_UP, onEvent);
+			 canvas.addEventListener(MouseEvent.MOUSE_MOVE, onEvent);
+			 canvas.addEventListener(MouseEvent.MOUSE_WHEEL, onEvent);
+			 canvas.addEventListener(MouseEvent.CLICK, onEvent);
+			 canvas.init(toolbar);
+			 addEventListener(Event.ENTER_FRAME, onUpdate);
+		 }
+		 
+		 private function onUpdate(evt:Event):void {
+			 canvas.onUpdate(evt);
+		 }
+		 
+		 private function onEvent(evt:Event):void {
+			 canvas.onEvent(evt);
+		 }
+		 
+		 private function onButton(evt:Event):void {
+			 canvas.onButton(evt);
+		 }
+		 ]]>
+	 </mx:Script>
+	 
+	 <mx:ApplicationControlBar dock="true" id="toolbar">
+		 <mx:Button id="btnopen" label="Open" icon="@Embed('../../res/icons/Image.png')" 
+		  labelPlacement="bottom" color="#993300" click="onButton(event)"></mx:Button>
+		 <mx:Button id="btnadd" label="Attach" icon="@Embed('../../res/icons/SWFLoader.png')" 
+		  labelPlacement="bottom" color="#993300" click="onButton(event)"></mx:Button>
+		 <mx:Button id="btnskin" label="Re-Skin" icon="@Embed('../../res/icons/VideoDisplay.png')" 
+		  labelPlacement="bottom" color="#993300" click="onButton(event)"></mx:Button>
+	 </mx:ApplicationControlBar>
+	 <pica:viewer id="canvas" x="0" y="0" width="800" height="600" mouseChildren="false" themeColor="#aaaaaa"></pica:viewer>
+	
+</mx:Application>

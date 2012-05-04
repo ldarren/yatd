@@ -1,0 +1,42 @@
+Dec 21, 2009
+=============
+* invite friends, by sending message to facebook
+* daily quest stream down from server
+* earn money from quest and spend for building and destroying walls
+* level gain level and diff quest for diff level
+* functional inventory
+* bug fixing for "big" click zone for certain wall
+* bug fixing for no response from inner server
+
+
+Dec 15, 2009
+=============
+* save and load to server - done
+* view friend list - done
+* view friend map - done
+* invite friends - half done
+* daily quest - done (hard coded)
+* money - done (but not functional)
+* level - done (but not functional)
+
+Nov 2, 2009
+=============
+* flood fill - cancelled
+* score (display state for each wisp) - done
+* chain group editing - cancelled
+* wisp effect (hit effect) - done
+* tower animation - done
+* better orbs - done
+* active towers - cancelled
+* tower formation - cancelled
+* sky box - done
+
+Oct 26, 2009
+==============
+* targeting wisps - done
+* wisps flow - done
+* flood fill - should we? - no
+* score - next sprint
+* tower removing  - done
+* game flow able to start stop start - done
+

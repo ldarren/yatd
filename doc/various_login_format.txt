@@ -1,0 +1,11 @@
+http://www.facebook.com/tos.php?api_key=63eade489b31633f81a5cd776197cc65&next=http://mwfb.zynga.com/mwfb/index.php%3Fxw_controller%3Dindex%26xw_action%3Dview&v=1.0&canvas
+
+http://www.facebook.com/tos.php?api_key=717eb66dcd3506b7fb0deaddfafed027&next=http://facebook.fishafish.com/fishafish/index.php%3Flanding%3Dtrue&v=1.0&canvas
+
+http://www.facebook.com/tos.php?api_key=ed31a65e55da33488cb4f758a415ac66&next=&v=1.0&auth_token=42e437d80a5cc6156d2d826703b7d5ed
+
+http://www.facebook.com/tos.php?api_key=3758ac43d9f3fe66f120cd34b6a29f93&next=http://www.gamemummy.com/facebook/flash_demo/&v=1.0&canvas
+
+http://www.facebook.com/tos.php?api_key=448a31f7758cee8797f69753c8952953&next=%3Fpf_ref%3Dsb&v=1.0
+
+http://www.facebook.com/tos.php?api_key=ed31a65e55da33488cb4f758a415ac66&next=http://ldarren.g0dsoft.com/yatd/yatd.php%3F_fb_fromhash%3Da2b8370e055392ffe6daa52e970087e8%26fb_sig_in_iframe%3D1%26fb_sig_iframe_key%3D3c59dc048e8850243be8079a5c74d079%26fb_sig_locale%3Den_US%26fb_sig_in_new_facebook%3D1%26fb_sig_time%3D1258824649.8664%26fb_sig_added%3D0%26fb_sig_canvas_user%3D100000481579781%26fb_sig_api_key%3Ded31a65e55da33488cb4f758a415ac66%26fb_sig_app_id%3D123978202616%26fb_sig%3D182a63c5ac761836d2f8db664d86e791&v=1.0&canvas

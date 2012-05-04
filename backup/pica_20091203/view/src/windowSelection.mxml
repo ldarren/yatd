@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+				layout="vertical"       
+				horizontalAlign="center"       
+				width="250" 
+				height="480" 
+				showCloseButton="true"
+				close="removeMe()"
+				title="Selection" creationComplete="init()">
+	
+	<mx:Script>
+		<![CDATA[
+			import flash.events.Event;
+			import mx.collections.ArrayCollection;
+			import mx.managers.PopUpManager;
+			
+			public var targetID:String;
+			public var selectedID:String;
+
+			public function init():void
+			{
+				PopUpManager.centerPopUp(this)
+			}
+			
+			public function removeMe():void
+			{
+				PopUpManager.removePopUp(this)
+			}
+			
+			private function userSelected(item:Object):void {
+				this.selectedID = idWinFindList.selectedItem as String;
+				idWinFindView.enabled = true;
+			}
+			
+			public function start(list:Array, target:String):void {
+				this.targetID = target;
+				idWinFindList.dataProvider = list;
+				idWinFindView.enabled = false;
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Label text="List:"/>
+	<mx:List alternatingItemColors="[#EEEEFE, white]" width="180" rowCount="14" change="userSelected(List(event.target).selectedItem)" id="idWinFindList" />
+	<mx:HBox>
+		<mx:Button label="Select" width="91" id="idWinFindView"/>
+		<mx:Button label="Close" width="91" click="removeMe()"/>
+	</mx:HBox>
+</mx:TitleWindow>

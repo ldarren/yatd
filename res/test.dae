@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.3.1" xmlns="http://www.collada.org/2005/COLLADASchema">
+	<asset>
+		<author>Mikael Lagre</author>
+		<authoring_tool>Blender 249 COLLADA Exporter</authoring_tool>
+		<up_axis>Z_UP</up_axis>
+		<unit meter="0.01" name="centimeter"/>
+	</asset>
+	<library type="IMAGE"/>
+	<library type="TEXTURE"/>
+	<library type="MATERIAL">
+		<material id="Material-Lib" name="Material">
+			<shader id="Material-Phong">
+				<technique profile="COMMON">
+					<pass>
+						<program url="PHONG">
+							<param flow="IN" name="COLOR" sid="color" type="float3">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="DIFFUSE" sid="diffuse" type="float3">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="AMBIENT" sid="ambient" type="float3">0.400000 0.400000 0.400000</param>
+							<param flow="IN" name="SPECULAR" sid="specular" type="float3">0.250000 0.250000 0.250000</param>
+							<param flow="IN" name="EMISSION" sid="emission" type="float3">0.000000 0.000000 0.000000</param>
+							<param flow="IN" name="SHININESS" sid="shininess" type="float">12.500000</param>
+							<param flow="IN" name="TRANSPARENT" sid="transparent" type="float">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="TRANSPARENCY" sid="transparency" type="float">0.000000</param>
+							<param flow="IN" name="REFLECTIVE" sid="reflective" type="float3">1.000000 1.000000 1.000000</param>
+							<param flow="IN" name="REFLECTIVITY" sid="reflectivity" type="float">0.800000</param>
+						</program>
+					</pass>
+				</technique>
+			</shader>
+		</material>
+	</library>
+	<library type="GEOMETRY">
+		<geometry id="Cube-Lib" name="Cube">
+			<mesh>
+				<source id="Cube-Pos" name="Cube-Pos">
+					<float_array count="24" id="Cube-Pos-Array" name="Cube-Pos-Array">1.000000 1.000000 -1.000000 2.000000 -1.000000 -2.000000 -2.000000 -1.000000 -2.000000 -1.000000 1.000000 -1.000000 1.000000 0.999999 1.000000 1.999999 -1.000001 2.000000 -2.000000 -0.999999 2.000000 -1.000000 1.000000 1.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube-Pos-Array-Accessor" offset="0" source="#Cube-Pos-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<source id="Cube-Normal" name="Cube-Normal">
+					<float_array count="72" id="Cube-Normal-Array" name="Cube-Normal-Array">0.000000 0.447214 -0.894427 0.000000 0.447214 -0.894427 0.000000 0.447214 -0.894427 0.000000 0.447214 -0.894427 0.000000 0.447214 0.894427 0.000000 0.447214 0.894427 0.000000 0.447214 0.894427 0.000000 0.447214 0.894427 0.894427 0.447213 0.000000 0.894427 0.447213 0.000000 0.894427 0.447213 0.000000 0.894427 0.447213 0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.894427 0.447214 -0.000000 -0.894427 0.447214 -0.000000 -0.894427 0.447214 -0.000000 -0.894427 0.447214 -0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube-Normal-Array-Accessor" offset="0" source="#Cube-Normal-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<source id="Cube-UV1" name="Cube-UV1">
+					<float_array count="48" id="Cube-UV1-Array" name="Cube-UV1-Array">0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube-UV1-Array-Accessor" offset="0" source="#Cube-UV1-Array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<vertices count="24" id="Cube-Vertices" name="Cube-Vertices">
+					<input semantic="POSITION" source="#Cube-Pos"/>
+				</vertices>
+				<polygons count="6" material="#Material-Lib">
+					<input idx="0" semantic="VERTEX" source="#Cube-Vertices"/>
+					<input idx="1" semantic="NORMAL" source="#Cube-Normal"/>
+					<input idx="2" semantic="TEXCOORD" source="#Cube-UV1"/>
+					<p>0 0 0 1 1 1 2 2 2 3 3 3</p>
+					<p>4 4 4 7 5 5 6 6 6 5 7 7</p>
+					<p>0 8 8 4 9 9 5 10 10 1 11 11</p>
+					<p>1 12 12 5 13 13 6 14 14 2 15 15</p>
+					<p>2 16 16 6 17 17 7 18 18 3 19 19</p>
+					<p>4 20 20 0 21 21 3 22 22 7 23 23</p>
+				</polygons>
+			</mesh>
+		</geometry>
+	</library>
+	<library type="LIGHT"/>
+	<library type="CAMERA"/>
+	<library type="ANIMATION"/>
+	<scene id="Scene" name="Scene">
+		<node id="Cube" name="Cube" type="NODE">
+			<instance url="#Cube-Lib"/>
+			<matrix sid="transform">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+		</node>
+	</scene>
+</COLLADA>

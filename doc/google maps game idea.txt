@@ -1,0 +1,8 @@
+1) five elements - with generating and overcoming relationship
+2) sink - transport, storing element, process overcoming elements (destroy self element)
+3) source - process pro element, selling self element
+4) rewards - appearance on map
+5) punishment - when bankrupt, change element type, all element destroy, state and size reset
+6) aliances (contract) - purchase and sell element at fix price
+7) objective - conquer the map?
+

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:Application
+ xmlns:mx="http://www.adobe.com/2006/mxml"
+ xmlns:pica="*"
+ layout="horizontal"
+ frameRate="15"
+ backgroundGradientColors="[#AEE8F4, #131617]"
+ backgroundGradientAlphas="[1.0, 1.0]"
+ applicationComplete="onCompletion(event)">
+	 
+	<mx:Script>
+	<![CDATA[
+		import flash.events.Event;
+		import flash.events.MouseEvent;
+		import flash.events.KeyboardEvent;
+
+		private function onCompletion(evt:Event):void {
+			canvas.addEventListener(MouseEvent.MOUSE_DOWN, onEvent);
+			canvas.addEventListener(MouseEvent.MOUSE_UP, onEvent);
+			canvas.addEventListener(MouseEvent.MOUSE_MOVE, onEvent);
+			canvas.addEventListener(MouseEvent.MOUSE_WHEEL, onEvent);
+			canvas.addEventListener(MouseEvent.CLICK, onEvent);
+			canvas.init();
+			stage.addEventListener(KeyboardEvent.KEY_DOWN, onEvent);
+            stage.addEventListener(KeyboardEvent.KEY_UP, onEvent);
+
+			addEventListener(Event.ENTER_FRAME, onUpdate);
+		}
+
+		private function onUpdate(evt:Event):void {
+			canvas.onUpdate(evt);
+		}
+
+		private function onEvent(evt:Event):void {
+			canvas.onEvent(evt);
+		}
+
+		private function onButton(evt:Event):void {
+			canvas.onButton(evt);
+		}
+	]]>
+	</mx:Script>
+
+    <mx:XML id="testcases">
+        <cases label="Test Cases">
+            <cat label="AI">
+				<test label="Path Finding" data="{Test.CASE_AI_PATHFINDING}" />
+				<test label="Swarm Behavior" data="{Test.CASE_AI_SWARM}" />
+            </cat>
+            <cat label="Rendering">
+				<test label="Decal" data="{Test.CASE_GFX_DECAL}" />
+				<test label="Animated Sprite" data="{Test.CASE_GFX_ANIMATED_SPRITE}" />
+				<test label="Iso Camera" data="{Test.CASE_GFX_ISO_CAMERA}" />
+				<test label="Lightning" data="{Test.CASE_GFX_LIGHTNING}" />
+				<test label="Portal" data="{Test.CASE_GFX_PORTAL}" />
+				<test label="Trails" data="{Test.CASE_GFX_TRAILS}" />
+            </cat>
+            <cat label="UI">
+				<test label="Buttons" data="{Test.CASE_UI_BUTTON}" />
+				<test label="List" data="{Test.CASE_UI_LIST}" />
+				<test label="Window" data="{Test.CASE_UI_WINDOW}" />
+            </cat>
+        </cases>
+    </mx:XML>
+
+    <mx:Style>
+        Tree {
+            folderClosedIcon: ClassReference(null);
+            folderOpenIcon: ClassReference(null);
+        }
+    </mx:Style>
+
+    <mx:Tree id="TreeProject"
+            dataProvider="{testcases}"
+            labelField="@label"
+            iconField="@icon"
+            showRoot="true"
+			change="onEvent(event);"
+            width="150"
+            height="650" />
+	
+	<pica:Test id="canvas" x="0" y="0" width="800" height="650" themeColor="#000000"></pica:Test>
+	
+</mx:Application>
